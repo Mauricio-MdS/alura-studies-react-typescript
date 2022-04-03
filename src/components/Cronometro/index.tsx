@@ -1,8 +1,10 @@
 import Botao from "../Botao";
 import Relogio from "./Relogio";
 import style from './Cronometro.module.scss';
+import { tempoParaSegundos } from "../../common/utils/date";
 
 export default function Cronometro(){
+    console.log('Teste de tempo em segundos: ', tempoParaSegundos('1:1:1'));
     return(
         <div className={style.cronometro}>
             <p className={style.titulo}>Escolha um card e inicie o cronômetro</p>
